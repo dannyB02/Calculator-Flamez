@@ -1,0 +1,106 @@
+body {
+    font-family:  sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+.calculator {
+    width: 300px;
+    height: 600px;
+    background-color: #1a1818;
+    border-radius: 1.0em;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    background-color: #e5e2e2;
+    border-radius: 0.6em;
+    padding: 20px;
+    text-align: right;
+    color: rgb(0, 0, 0);
+}
+
+.history {
+    color: #000000;
+    font-size: 0.9em;
+    min-height: 20px;  /* Ensures the history section has some space */
+}
+
+.result {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 0.8em;
+    font-size:1.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 2.0em;
+    cursor: pointer;
+}
+
+.item-grey {
+    background-color: rgb(132, 132, 132);
+}
+
+.item-orange{
+    background-color: rgb(39, 40, 119)
+}
+
+.item-darkgrey {
+    background-color:rgb(69, 67, 67);
+    color: white;
+}
+
+button:active {
+    background-color: #555;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.social-icon {
+    margin: 0 auto !important;
+  }
+  
+  .social-icon img {
+    border: 1px solid white !important;
+    width: 1em !important;
+    border-radius: 50% !important;
+  }
+  
+/* footer */
+footer {
+    font-size: 0.60rem ;
+    color: hsl(0, 0%, 100%) ;
+    text-align: center;
+    padding: inherit;
+    margin-left: 3rem; 
+  }
+
+  .table>tbody {
+    vertical-align: inherit !important;
+  }
+
+  .table {
+    color: white !important;
+  }
+
+  p {
+  text-align: auto;
+  }

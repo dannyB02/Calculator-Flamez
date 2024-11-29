@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale-1>
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googeapis.com/css2?family=Montserrat&family=Outfit&family=:wght@100;300;400&family=Sacramento&display=swap" rel="stylesheet"> 
+   <script src="https://kit.fontawesome.com/9f9f815f89.js" crossorigin="anonymous"></script>
+   <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Js/script.js"></script>
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="display">
+             <!-- History Section -->
+            <div id="history" class="history"></div>
+            HISTORY  
+            <!-- Display Section -->
+            <div id="display" class="result">0</div>   
+        </div>
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <button class="item item-grey" onclick="clearDisplay()">AC</button>
+            <button class="item item-grey" onclick="negate()">+/-</button>
+            <button class="item item-grey" onclick="inputOperator('%')">%</button>
+            <button class="item item-orange" onclick="inputOperator('/')">/</button>
+
+            <button class="item item-darkgrey" onclick="inputDigit(7)">7</button>
+            <button class="item item-darkgrey" onclick="inputDigit(8)">8</button>
+            <button class="item item-darkgrey" onclick="inputDigit(9)">9</button>
+            <button class="item item-orange" onclick="inputOperator('*')">*</button>
+
+            <button class="item item-darkgrey" onclick="inputDigit(4)">4</button>
+            <button class="item item-darkgrey" onclick="inputDigit(5)">5</button>
+            <button class="item item-darkgrey" onclick="inputDigit(6)">6</button>
+            <button class="item item-orange" onclick="inputOperator('-')">-</button>
+
+            <button class="item item-darkgrey" onclick="inputDigit(1)">1</button>
+            <button class="item item-darkgrey" onclick="inputDigit(2)">2</button>
+            <button class="item item-darkgrey" onclick="inputDigit(3)">3</button>
+            <button class="item item-orange" onclick="inputOperator('+')">+</button>
+
+            <button class="zero" onclick="inputDigit(0)">0</button>
+            <button class="item item-darkgrey" onclick="inputDecimal('.')">.</button>
+            <button class="item item-orange" onclick="calculate()">=</button>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <table class="social-icon">
+              <tbody>z
+                <tr>
+                  <td>
+                    <br><br>
+                    <img src="images/facebook_icon.svg" alt="Facebook">
+                    <img src="images/instagram_icon.svg" alt="instagram">
+                    <img src="images/icon-email.svg" alt="Email">
+                    <img src="images/twitter_icon.svg" alt="Twitter">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="copyright"> 
+                <footer>Coded by <a href="mailto:dannydeveloper0@gmail">FLAMEZ</a>.</footer>
+              </p>
+            </div>
+          </div>
+        </div>
+  
+  </body>
+</html>
+
+ 
+
+
+
+
+
+
